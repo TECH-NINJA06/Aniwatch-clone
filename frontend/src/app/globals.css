@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: rgb(36, 36, 40);
+  color: #ccc;
+  /* margin-left: 7rem;
+  margin-right: 7rem; */
+  max-width: 1200px;
+  /* width: 100%; */
+  font-family: "Poppins", Arial;
+ 
+}
+
+.nav {
+  background-color: rgb(36, 36, 40);
+  line-height: 60px;
+}
+
+.mxg {
+  margin-left: 7rem;
+  margin-right: 7rem;
+}
+
+.hero {
+  background-image: linear-gradient(to top, #787474 0%, rgb(36, 36, 40) 100%);
+  width: 100vw;
+}
