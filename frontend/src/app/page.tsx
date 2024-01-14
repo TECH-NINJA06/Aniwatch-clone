@@ -1,7 +1,7 @@
 import React from 'react'
-import HomePageNav from "../app/Components/HomePageNav"
-import HomeHeroSection from "../app/Components/HomeHeroSection"
-import VisitSite from './Components/VisitSite'
+import HomePageNav from "./Components/LandingPage/HomePageNav"
+import HomeHeroSection from "./Components/LandingPage/HomeHeroSection"
+import VisitSite from './Components/LandingPage/VisitSite'
 
 const page = () => {
   return (
