@@ -29,3 +29,9 @@ body {
   background-image: linear-gradient(to top, #787474 0%, rgb(36, 36, 40) 100%);
   width: 100vw;
 }
+
+
+.homenav {
+  /* background-color: rgba(36,36,40,.8); */
+  backdrop-filter: blur(10px);
+}

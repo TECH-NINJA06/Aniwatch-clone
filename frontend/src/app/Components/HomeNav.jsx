@@ -5,7 +5,7 @@ import React from 'react'
 const HomeNav = () => {
     
   return (
-    <div className='h-[70px] w-[100vw] justify-between flex bg-red-300 px-3'>
+    <div className='h-[70px] w-[100vw] justify-between flex bg-red-100 px-3 z-50 fixed homenav'>
         <div className='float-left bg-slate-50'>
 
         </div>
