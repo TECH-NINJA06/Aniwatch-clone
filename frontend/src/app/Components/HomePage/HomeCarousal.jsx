@@ -4,15 +4,15 @@ import React, {useEffect, useState} from 'react'
 import axios from 'axios'
 import { Carousel } from 'flowbite-react';
 
-const HomeCarousal = async () => {
+const HomeCarousal = () => {
   const [home, setHome] = useState({})
-  const [spotlight, setSpotlight] = useState([])
-  const [trending, setTrending] = useState([])
-  const [latest, setLatest] = useState([])
-  const [upcoming, setUpcoming] = useState([])
-  const [top, setTop] = useState([])   // top 10 animes
-  const [airing, setAiring] = useState([])
-  const [genre, setGenre] = useState([])
+  // const [spotlight, setSpotlight] = useState([])
+  // const [trending, setTrending] = useState([])
+  // const [latest, setLatest] = useState([])
+  // const [upcoming, setUpcoming] = useState([])
+  // const [top, setTop] = useState([])   // top 10 animes
+  // const [airing, setAiring] = useState([])
+  // const [genre, setGenre] = useState([])
 
 
   // axios.get('https://api-aniwatch.onrender.com/anime/home')
@@ -39,7 +39,6 @@ const HomeCarousal = async () => {
   // .catch((err) =>{
   //   console.log("Error at carousal axios: " + err);
   // })
-  // useEffect(() => {
   //   const getData = async () => {
   //     // const response = await fetch("https://api-aniwatch.onrender.com/anime/home");
   //     // const data = await response.json();
@@ -78,11 +77,22 @@ const HomeCarousal = async () => {
     
   // }, [])
   
- 
+  useEffect(() => {
+    axios.get('https://api-aniwatch.onrender.com/anime/home')
+    .then((response) =>{
+      setHome(response.data);
+      console.log(home);
+    })
+    .catch((error) =>{
+      console.log("Error at carousal axios: " + error);
+    })
+  
+  }, [])
+  
  
  
 
-  // const homeSpotlight = home.spotlightAnimes;
+  const homeSpotlight = home.spotlightAnimes;
 
   return (
     <div className=' w-[100vw] h-[600px] relative'>

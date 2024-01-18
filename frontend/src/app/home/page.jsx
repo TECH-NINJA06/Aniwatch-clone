@@ -1,12 +1,16 @@
 import React from 'react'
 import HomeNav from '../Components/HomeNav'
 import HomeCarousal from '../Components/HomePage/HomeCarousal'
+import HomeTrend from '../Components/HomePage/HomeTrend'
+import Share from '../Components/Share'
 
 const Home = () => {
   return (
-    <div>
+    <div className=' min-h-[100vh]'>
       <HomeNav />
       <HomeCarousal />
+      <HomeTrend />
+      <Share />
     </div>
   )
 }
