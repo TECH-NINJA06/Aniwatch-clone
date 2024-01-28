@@ -2,7 +2,7 @@ import React from 'react'
 
 const Share = () => {
   return (
-    <div>Share</div>
+    <div>hello</div>
   )
 }
 

@@ -15,8 +15,8 @@ const HomeTrend = () => {
         axios.get('https://api-aniwatch.onrender.com/anime/home')
         .then((response) =>{
           setHome(response.data);
-          setHomeTrending(home.trendingAnimes)
-          console.log(home);
+          
+          console.log( "homeTrending: "+ home );
         })
         .catch((error) =>{
           console.log("Error at carousal axios: " + error);
@@ -34,7 +34,19 @@ const HomeTrend = () => {
                 <div className='bg-red-50 w-[100%] h-full'>
                     <Carousel indicators={false} slide={false} leftControl={FaChevronLeft} rightControl={FaChevronRight}>
                         <div className='w-[100%] h-full flex justify-between'>
-                            <div className='w-[16%] h-full flex mr-3 bg-[#242428]'>
+                            <div className='w-[16%] h-[317px] flex mr-3 bg-[#242428]'>
+                                <div className='w-10 h-full'>
+                                    <span className='absolute bottom-0 left-0 right-0 text-[#ffdd95] text-center leading-4'>01</span>
+                                    <div className='number bottom-[90px] w-36 absolute left-[-55px] font-medium text-left text-sm'>
+                                        One Piece
+                                    </div>
+                                </div>
+
+                                <div className='h-full bg-no-repeat object-cover w-5' style={{ backgroundImage: 'url(https://img.flawlessfiles.com/_r/300x400/100/54/90/5490cb32786d4f7fef0f40d7266df532/5490cb32786d4f7fef0f40d7266df532.jpg)'}}>
+
+                                </div>
+                            </div>
+                            {/* <div className='w-[16%] h-full flex mr-3 bg-[#242428]'>
                                 <div className=' top-0 left-0 bottom-0 w-10'>
                                     <span className='absolute bottom-0 left-0 right-0 text-[#ffdd95] text-center leading-4'>01</span>
                                     <div className='number bottom-[90px] w-36 absolute left-[-55px] font-medium text-left text-sm'>
@@ -93,19 +105,7 @@ const HomeTrend = () => {
                                 <div className='h-full w-full bg-no-repeat object-cover' style={{ backgroundImage: 'url(https://img.flawlessfiles.com/_r/300x400/100/54/90/5490cb32786d4f7fef0f40d7266df532/5490cb32786d4f7fef0f40d7266df532.jpg)'}}>
 
                                 </div>
-                            </div>
-                            <div className='w-[16%] h-full flex mr-3 bg-[#242428]'>
-                                <div className=' top-0 left-0 bottom-0 w-10'>
-                                    <span className='absolute bottom-0 left-0 right-0 text-[#ffdd95] text-center leading-4'>01</span>
-                                    <div className='number bottom-[90px] w-36 absolute left-[-55px] font-medium text-left text-sm'>
-                                        One Piece
-                                    </div>
-                                </div>
-
-                                <div className='h-full w-full bg-no-repeat object-cover' style={{ backgroundImage: 'url(https://img.flawlessfiles.com/_r/300x400/100/54/90/5490cb32786d4f7fef0f40d7266df532/5490cb32786d4f7fef0f40d7266df532.jpg)'}}>
-
-                                </div>
-                            </div>
+                            </div> */}
                         </div>
                         <div className='w-[100%] h-full'>
                             <div>
