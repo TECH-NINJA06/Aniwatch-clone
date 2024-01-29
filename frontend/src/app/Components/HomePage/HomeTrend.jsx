@@ -31,9 +31,9 @@ const HomeTrend = () => {
         <h1 className=' text-[#ffdd95] font-semibold text-xl leading-[1.3]'>Trending</h1>
         <div className='w-[100vw] h-full mt-2 pr-14 relative'>
             <div className='flex h-full w-full'>
-                <div className='bg-red-50 w-[100%] h-full'>
+                <div className='bg-[#242428] w-[100%] h-full'>
                     <Carousel indicators={false} slide={false} leftControl={FaChevronLeft} rightControl={FaChevronRight}>
-                        <div className='w-[100%] h-full flex justify-between'>
+                        <div className='w-[100%] h-full flex justify-between bg-[#242428]'>
                             <div className='w-[18%] h-[317px] flex mr-3 bg-[#242428]'>
                                 <div className='w-10 h-full'>
                                     <span className='absolute bottom-0 left-0 pl-2 text-[#ffdd95] text-center leading-4'>01</span>
@@ -41,7 +41,51 @@ const HomeTrend = () => {
                                         One Piece
                                     </div>
                                 </div>
-                                <div className='h-full w-full '>
+                                <div className='h-full w-full bg-center bg-cover ' style={{ backgroundImage: `url("${home?.trendingAnimes ? home.trendingAnimes[0].poster : ""}")`}}>
+                                </div>
+                                
+                            </div>
+                            <div className='w-[18%] h-[317px] flex mr-3 bg-[#242428]'>
+                                <div className='w-10 h-full'>
+                                    <span className='absolute bottom-0 left-0 pl-2 text-[#ffdd95] text-center leading-4'>01</span>
+                                    <div className='number bottom-[90px] w-36 absolute left-[-55px] font-medium text-left text-sm'>
+                                        One Piece
+                                    </div>
+                                </div>
+                                <div className='h-full w-full bg-center bg-cover ' style={{ backgroundImage: `url("${home?.trendingAnimes ? home.trendingAnimes[1].poster : ""}")`}}>
+                                </div>
+                                
+                            </div>
+                            <div className='w-[18%] h-[317px] flex mr-3 bg-[#242428]'>
+                                <div className='w-10 h-full'>
+                                    <span className='absolute bottom-0 left-0 pl-2 text-[#ffdd95] text-center leading-4'>01</span>
+                                    <div className='number bottom-[90px] w-36 absolute left-[-55px] font-medium text-left text-sm'>
+                                        One Piece
+                                    </div>
+                                </div>
+                                <div className='h-full w-full bg-center bg-cover ' style={{ backgroundImage: `url("${home?.trendingAnimes ? home.trendingAnimes[2].poster : ""}")`}}>
+                                </div>
+                                
+                            </div>
+                            <div className='w-[18%] h-[317px] flex mr-3 bg-[#242428]'>
+                                <div className='w-10 h-full'>
+                                    <span className='absolute bottom-0 left-0 pl-2 text-[#ffdd95] text-center leading-4'>01</span>
+                                    <div className='number bottom-[90px] w-36 absolute left-[-55px] font-medium text-left text-sm'>
+                                        One Piece
+                                    </div>
+                                </div>
+                                <div className='h-full w-full bg-center bg-cover ' style={{ backgroundImage: `url("${home?.trendingAnimes ? home.trendingAnimes[3].poster : ""}")`}}>
+                                </div>
+                                
+                            </div>
+                            <div className='w-[18%] h-[317px] flex mr-3 bg-[#242428]'>
+                                <div className='w-10 h-full'>
+                                    <span className='absolute bottom-0 left-0 pl-2 text-[#ffdd95] text-center leading-4'>01</span>
+                                    <div className='number bottom-[90px] w-36 absolute left-[-55px] font-medium text-left text-sm'>
+                                        One Piece
+                                    </div>
+                                </div>
+                                <div className='h-full w-full bg-center bg-cover ' style={{ backgroundImage: `url("${home?.trendingAnimes ? home.trendingAnimes[4].poster : ""}")`}}>
                                 </div>
                                 
                             </div>
