@@ -2,6 +2,7 @@ import React from 'react'
 import HomeNav from '../Components/HomeNav'
 import HomeCarousal from '../Components/HomePage/HomeCarousal'
 import HomeTrend from '../Components/HomePage/HomeTrend'
+import HomeFeatured from '../Components/HomePage/HomeFeatured'
 import Share from '../Components/Share'
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
       <HomeNav />
       <HomeCarousal />
       <HomeTrend />
+      <HomeFeatured />
       <Share />
     </div>
   )
