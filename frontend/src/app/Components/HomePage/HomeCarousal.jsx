@@ -106,29 +106,29 @@ const HomeCarousal = () => {
   return (
     <div className=' w-[100vw] h-[600px] relative'>
       <Carousel indicators={false}>
-        <div className='h-full w-full bg-cover absolute' style={{ backgroundImage: `url("${home?.spotlightAnimes ? home.spotlightAnimes[0].poster : ""}")`}}>
+        <div className='h-full w-full bg-cover absolute' style={{ backgroundImage: `url("${home?.spotlightAnimes ? home.spotlightAnimes[0].poster : "https://cdn.dribbble.com/users/172906/screenshots/1183163/2013-08-04_21_12_53.gif"}")`}}>
         </div>
-        <div className='h-full w-full bg-cover absolute' style={{ backgroundImage: `url("${home?.spotlightAnimes ? home.spotlightAnimes[1].poster : ""}")`}}>
+        <div className='h-full w-full bg-cover absolute' style={{ backgroundImage: `url("${home?.spotlightAnimes ? home.spotlightAnimes[1].poster : "https://cdn.dribbble.com/users/172906/screenshots/1183163/2013-08-04_21_12_53.gif"}")`}}>
         </div>
-        <div className='h-full w-full bg-cover absolute' style={{ backgroundImage: `url("${home?.spotlightAnimes ? home.spotlightAnimes[2].poster : ""}")`}}>
+        <div className='h-full w-full bg-cover absolute' style={{ backgroundImage: `url("${home?.spotlightAnimes ? home.spotlightAnimes[2].poster : "https://cdn.dribbble.com/users/172906/screenshots/1183163/2013-08-04_21_12_53.gif"}")`}}>
         </div>
-        <div className='h-full w-full bg-cover absolute' style={{ backgroundImage: `url("${home?.spotlightAnimes ? home.spotlightAnimes[3].poster : ""}")`}}>
+        <div className='h-full w-full bg-cover absolute' style={{ backgroundImage: `url("${home?.spotlightAnimes ? home.spotlightAnimes[3].poster : "https://cdn.dribbble.com/users/172906/screenshots/1183163/2013-08-04_21_12_53.gif"}")`}}>
         </div>
-        <div className='h-full w-full bg-cover absolute' style={{ backgroundImage: `url("${home?.spotlightAnimes ? home.spotlightAnimes[4].poster : ""}")`}}>
+        <div className='h-full w-full bg-cover absolute' style={{ backgroundImage: `url("${home?.spotlightAnimes ? home.spotlightAnimes[4].poster : "https://cdn.dribbble.com/users/172906/screenshots/1183163/2013-08-04_21_12_53.gif"}")`}}>
         </div>
-        <div className='h-full w-full bg-cover absolute' style={{ backgroundImage: `url("${home?.spotlightAnimes ? home.spotlightAnimes[5].poster : ""}")`}}>
+        <div className='h-full w-full bg-cover absolute' style={{ backgroundImage: `url("${home?.spotlightAnimes ? home.spotlightAnimes[5].poster : "https://cdn.dribbble.com/users/172906/screenshots/1183163/2013-08-04_21_12_53.gif"}")`}}>
         </div>
-        <div className='h-full w-full bg-cover absolute' style={{ backgroundImage: `url("${home?.spotlightAnimes ? home.spotlightAnimes[6].poster : ""}")`}}>
+        <div className='h-full w-full bg-cover absolute' style={{ backgroundImage: `url("${home?.spotlightAnimes ? home.spotlightAnimes[6].poster : "https://cdn.dribbble.com/users/172906/screenshots/1183163/2013-08-04_21_12_53.gif"}")`}}>
         </div>
-        <div className='h-full w-full bg-cover absolute' style={{ backgroundImage: `url("${home?.spotlightAnimes ? home.spotlightAnimes[7].poster : ""}")`}}>
+        <div className='h-full w-full bg-cover absolute' style={{ backgroundImage: `url("${home?.spotlightAnimes ? home.spotlightAnimes[7].poster : "https://cdn.dribbble.com/users/172906/screenshots/1183163/2013-08-04_21_12_53.gif"}")`}}>
         </div>
-        <div className='h-full w-full bg-cover absolute' style={{ backgroundImage: `url("${home?.spotlightAnimes ? home.spotlightAnimes[8].poster : ""}")`}}>
+        <div className='h-full w-full bg-cover absolute' style={{ backgroundImage: `url("${home?.spotlightAnimes ? home.spotlightAnimes[8].poster : "https://cdn.dribbble.com/users/172906/screenshots/1183163/2013-08-04_21_12_53.gif"}")`}}>
         </div>
-        <div className='h-full w-full bg-cover absolute' style={{ backgroundImage: `url("${home?.spotlightAnimes ? home.spotlightAnimes[9].poster : ""}")`}}>
+        <div className='h-full w-full bg-cover absolute' style={{ backgroundImage: `url("${home?.spotlightAnimes ? home.spotlightAnimes[9].poster : "https://cdn.dribbble.com/users/172906/screenshots/1183163/2013-08-04_21_12_53.gif"}")`}}>
         </div>
-        <div className='h-full w-full bg-cover absolute' style={{ backgroundImage: `url("${home?.spotlightAnimes ? home.spotlightAnimes[10].poster : ""}")`}}>
+        <div className='h-full w-full bg-cover absolute' style={{ backgroundImage: `url("${home?.spotlightAnimes ? home.spotlightAnimes[10].poster : "https://cdn.dribbble.com/users/1053052/screenshots/3600670/_____.gif"}")`}}>
         </div>
-        <div className='h-full w-full bg-cover absolute' style={{ backgroundImage: `url("${home?.spotlightAnimes ? home.spotlightAnimes[11].poster : ""}")`}}>
+        <div className='h-full w-full bg-cover absolute' style={{ backgroundImage: `url("${home?.spotlightAnimes ? home.spotlightAnimes[11].poster : "https://cdn.dribbble.com/users/172906/screenshots/1183163/2013-08-04_21_12_53.gif"}")`}}>
         </div>
       </Carousel>
     </div>
