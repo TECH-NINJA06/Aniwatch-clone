@@ -43,7 +43,7 @@ const Home = () => {
     )
   } else {
     return (
-      <div className='w-[100vw] h-[100vh] bg-no-repeat object-cover'>
+      <div className='w-[100vw] h-[100vh] bg-no-repeat object-cover flex justify-center items-center p-40 bg-white '>
         <img src="https://i.pinimg.com/originals/71/3a/32/713a3272124cc57ba9e9fb7f59e9ab3b.gif" alt="Loading" className=' h-full w-full' />
       </div>
     )
