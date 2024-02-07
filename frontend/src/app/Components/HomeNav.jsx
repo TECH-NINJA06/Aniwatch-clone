@@ -1,6 +1,9 @@
 'use client'
 import Link from 'next/link'
 import React from 'react'
+import { IoMdSearch } from "react-icons/io"
+
+const handleSearch = () => {}
 
 const HomeNav = () => {
     
@@ -10,8 +13,16 @@ const HomeNav = () => {
           <div className='w-[31%] bg-black h-full'>
 
           </div>
-          <div className='bg-red-500 w-[65%] h-full'>
-
+          <div className='bg-red-500 w-[65%] h-full py-4'>
+            <div className='h-full w-full bg-white flex items-center'>
+              <input type='text' className='w-[75%] border-none h-full' />
+              <button onClick={handleSearch} className='w-[10%]'>
+                <IoMdSearch className="text-black text-xl font-bold ml-1" />
+              </button>
+              <button className='w-[15%] h-[75%] mr-2 bg-gray-400 rounded-sm text-white flex justify-center items-center text-sm'>
+                Filter
+              </button>
+            </div>
           </div>
 
         </div>
