@@ -1,12 +1,26 @@
 'use client'
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 import { IoMdSearch } from "react-icons/io"
 
-const handleSearch = () => {}
+
 
 const HomeNav = () => {
-    
+  const [query, setQuery] = useState("");
+  const [kebabQuery, setKebabQuery] = useState("");
+
+  const handleSearch = async () => {
+    setKebabQuery(kebabCaseString);
+    console.log(kebabCaseString);
+  }
+
+  function toKebabCase(str) {
+    return str.replace(/\s+/g, '-').toLowerCase();
+  }
+  
+  const userInput = query;
+  const kebabCaseString = toKebabCase(userInput);
+
   return (
     <div className='h-[70px] w-[100vw] justify-between flex bg-red-100 px-3 z-50 fixed homenav'>
         <div className='float-left bg-slate-50 w-[36%] flex justify-between'>
@@ -15,7 +29,9 @@ const HomeNav = () => {
           </div>
           <div className='bg-red-500 w-[65%] h-full py-4'>
             <div className='h-full w-full bg-white flex items-center'>
-              <input type='text' className='w-[75%] border-none h-full' />
+              <input type='text' className='w-[75%] border-none h-full' onChange={(e)=>{
+                setQuery(e.target.value);
+              }}  />
               <button onClick={handleSearch} className='w-[10%]'>
                 <IoMdSearch className="text-black text-xl font-bold ml-1" />
               </button>
