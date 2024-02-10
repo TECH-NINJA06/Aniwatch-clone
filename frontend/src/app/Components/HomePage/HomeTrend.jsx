@@ -12,7 +12,7 @@ const HomeTrend = () => {
     const [homeTrending, setHomeTrending] = useState([])
 
     useEffect(() => {
-        axios.get('http://loaclhost:4000/anime/home')
+        axios.get('https://api-aniwatch.onrender.com/anime/home')
         .then((response) =>{
           setHome(response.data);
           

@@ -22,7 +22,7 @@ const HomeNav = () => {
   const userInput = query;
   const kebabCaseString = toKebabCase(userInput);
   return (
-    <div className='h-[70px] w-[100vw] justify-between flex bg-red-100 px-3 z-50 fixed homenav'>
+    <div className='h-[70px] w-[100vw] justify-between flex bg-[#242428] px-3 z-50 fixed homenav'>
         <div className='float-left bg-slate-50 w-[36%] flex justify-between'>
           <div className='w-[31%] bg-black h-full'>
 
