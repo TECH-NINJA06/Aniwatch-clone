@@ -27,7 +27,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "src/app/search/page.jsx"  ],
   "exclude": [
     "node_modules"
   ]

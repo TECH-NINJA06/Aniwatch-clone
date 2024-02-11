@@ -23,11 +23,11 @@ const HomeNav = () => {
   const kebabCaseString = toKebabCase(userInput);
   return (
     <div className='h-[70px] w-[100vw] justify-between flex bg-[#242428] px-3 z-50 fixed homenav'>
-        <div className='float-left bg-slate-50 w-[36%] flex justify-between'>
+        <div className='float-left w-[36%] flex justify-between'>
           <div className='w-[31%] bg-black h-full'>
 
           </div>
-          <div className='bg-red-500 w-[65%] h-full py-4'>
+          <div className='bg-[#242428] w-[65%] h-full py-4'>
             <Search />
           </div>
 
