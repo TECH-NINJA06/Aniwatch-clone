@@ -13,6 +13,7 @@ const page = () => {
  
   const keyword = searchParams.get('keyword')
   function fromKebabCase(str) {
+    if (!str) return '';
     return str.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
   }
   
