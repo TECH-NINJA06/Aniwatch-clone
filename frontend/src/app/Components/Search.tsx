@@ -5,7 +5,7 @@ import React, { useState } from 'react'
 import { IoMdSearch } from "react-icons/io"
 
 const Search = () => {
-    const router = useRouter();
+  const router = useRouter();
   const [query, setQuery] = useState("");
   const [kebabQuery, setKebabQuery] = useState("");
 

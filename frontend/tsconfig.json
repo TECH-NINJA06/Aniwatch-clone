@@ -27,7 +27,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "src/app/search/page.jsx"  ],
+, "src/app/search/page.jsx", "src/app/Components/Search/AnimeCard.tsx"  ],
   "exclude": [
     "node_modules"
   ]

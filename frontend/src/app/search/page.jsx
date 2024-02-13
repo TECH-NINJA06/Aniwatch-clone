@@ -54,7 +54,7 @@ const page = () => {
       <HomeNav />
       <div className='h-10 w-full mt-28 px-3 mb-5'>
         <h1 className='text-[#ffdd95] font-semibold text-3xl leading-[1.3]'>
-          Search Results for: {normalText}   
+          Search Results for : {normalText}   
         </h1>
       </div>
       <div className='h-full w-full'>
