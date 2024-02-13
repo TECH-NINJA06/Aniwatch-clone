@@ -3,7 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { IoSearch } from "react-icons/io5";
-import { FaArrowRight } from "react-icons/fa6";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
