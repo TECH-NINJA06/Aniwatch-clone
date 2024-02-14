@@ -70,7 +70,7 @@ const HomeTrend = () => {
                                 <div className='w-10 h-full'>
                                     <span className='absolute bottom-0 left-0 pl-2 text-[#ffdd95] text-center leading-4'>0{home?.trendingAnimes ? home.trendingAnimes[3].rank : ""}</span>
                                     <div className='number bottom-[90px] w-36 absolute left-[-55px] font-medium text-left text-sm'>
-                                        {home?.trendingAnimes ? home.trendingAnimes[0].name : ""}
+                                        {home?.trendingAnimes ? home.trendingAnimes[3].name : ""}
                                     </div>
                                 </div>
                                 <div className='h-full w-full bg-center bg-cover ' style={{ backgroundImage: `url("${home?.trendingAnimes ? home.trendingAnimes[3].poster : ""}")`}}>
