@@ -63,7 +63,7 @@ const HomeHeroSection = () => {
             <p>
               <Link href="/search?keyword=One-Piece">One Piece</Link>, <Link href="/search?keyword=Solo-Leveling">Solo Leveling</Link>, <Link href="/search?keyword=Mashle:-Magic-and-Muscles-Season-2">Mashle: Magic and Muscles...</Link><br/>
               <Link href="/search?keyword=Jujutsu-Kaisen-2nd-Season">Jujutsu Kaisen 2nd Season</Link>, <Link href="/search?keyword=Mashle:-Magic-and-Muscles">Mashle: Magic and Muscles</Link>,<br/>
-              <Link href="/search?keyword=Naruto:-Shippuden">Naruto: Shippuden</Link>, <Link href="/search?keyword=Overflow-(Uncencored)">Overflow (Uncencored)</Link>, <Link href="/search?keyword=Black-Clover">Black Clover</Link>,<br />
+              <Link href="/search?keyword=Naruto:-Shippuden">Naruto: Shippuden</Link>, <Link href="/search?keyword=Overflow-(Uncensored)">Overflow (Uncensored)</Link>, <Link href="/search?keyword=Black-Clover">Black Clover</Link>,<br />
               <Link href="/search?keyword=Boruto:-Naruto-Next-Generations">Boruto: Naruto Next Genera...</Link>, <Link href="/search?keyword=Attack-on-Titan">Attack on Titan</Link>, ...
             </p>
           </div>
