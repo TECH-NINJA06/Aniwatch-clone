@@ -6,17 +6,18 @@ import React, { useEffect, useState } from 'react'
 import HomeNav from '../Components/HomeNav'
 import AnimeCard, { AnimeProp } from '../Components/Search/AnimeCard'
 import { fetchAnime } from '../utils/action'
+import { useRouter } from 'next/navigation'
 
 const page = () => {
+  const router = useRouter();
 
   const searchParams = useSearchParams()
- 
   const keyword = searchParams.get('keyword')
+
   function fromKebabCase(str) {
     if (!str) return '';
     return str.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
   }
-  
   const kebabCaseString = keyword;
   const normalText = fromKebabCase(kebabCaseString);
   

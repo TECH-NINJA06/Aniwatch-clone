@@ -1,6 +1,6 @@
-import axios from "axios";
-import Image from "next/image";
-import { useEffect, useState } from "react";
+
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 import { BsFillBadgeCcFill } from "react-icons/bs";
 import { CiMicrophoneOn } from "react-icons/ci";
 import { IoTimeOutline } from "react-icons/io5";
@@ -21,7 +21,6 @@ export interface AnimeProp {
 
 interface Prop {
   anime: AnimeProp;
-  index: number;
 }
 
 // export const AnimeProp = {
@@ -50,7 +49,8 @@ interface Prop {
       //variants={variants}
 // }
 
-function AnimeCard({ anime, index }: Prop) {
+function AnimeCard({ anime }: Prop) {
+  const router = useRouter();
 
   // const [search, setSearch] = useState({})
   // const [query, setQuery] = useState("")
@@ -65,9 +65,17 @@ function AnimeCard({ anime, index }: Prop) {
   //    })()
 
   // }, [])
+  // function toKebabCase(str) {
+  //   return str.replace(/\s+/g, "-").toLowerCase();
+  // }
+
+  const searchClick = () => {
+    // const kebabName = anime.name.toLowerCase().replace(/\s+/g, '-');
+      router.push(`/anime?id=${anime.id}`)
+  }
 
   return (
-    <div className="max-w-sm rounded relative w-full">
+    <div className="max-w-sm rounded relative w-full" onClick={searchClick}>
       <div className="relative w-full h-[37vh] bg-no-repeat bg-cover" style={{ backgroundImage: `url("${anime.poster}")`}}>
       {/* <img
       src={`search.animes[${index}].poster`}
