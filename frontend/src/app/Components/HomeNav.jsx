@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import React, { useState, useEffect } from "react";
 import { IoMdSearch } from "react-icons/io";
 import axios from "axios";
-import {SUGGESTIONS} from '../utils/data';
+import {SUGGESTIONS} from '../utils/data.example';
 
 const HomeNav = () => {
   const router = useRouter();
