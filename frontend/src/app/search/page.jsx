@@ -5,7 +5,6 @@ import { useSearchParams } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
 import HomeNav from '../Components/HomeNav'
 import AnimeCard, { AnimeProp } from '../Components/Search/AnimeCard'
-import { fetchAnime } from '../utils/action'
 import { useRouter } from 'next/navigation'
 
 const page = () => {
