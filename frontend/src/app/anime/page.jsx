@@ -136,8 +136,17 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div className=" h-72 w-full mt-5 bg-white">
-
+      <div className=" h-[20rem] w-full mt-5 bg-slate-400 leading-8">
+        <p><span className=" text-base font-semibold">Japanese: </span>{ANIMES.anime.moreInfo.japanese}</p>
+        <p><span className=" text-base font-semibold">Synonyms: </span>{ANIMES.anime.moreInfo.synonyms}</p>
+        <p><span className=" text-base font-semibold">Aired: </span>{ANIMES.anime.moreInfo.aired}</p>
+        <p><span className=" text-base font-semibold">Premiered: </span>{ANIMES.anime.moreInfo.premiered}</p>
+        <p><span className=" text-base font-semibold">Duration: </span>{ANIMES.anime.moreInfo.duration}</p>
+        <p><span className=" text-base font-semibold">Status: </span>{ANIMES.anime.moreInfo.status}</p>
+        <p><span className=" text-base font-semibold">MAL Score: </span>{ANIMES.anime.moreInfo.malscore}</p>
+        <p><span className=" text-base font-semibold">Genres: </span>{ANIMES.anime.moreInfo.genres[0]}, {ANIMES.anime.moreInfo.genres[1]}, {ANIMES.anime.moreInfo.genres[2]}</p>
+        <p><span className=" text-base font-semibold">Studios: </span>{ANIMES.anime.moreInfo.studios}</p>
+        <p><span className=" text-base font-semibold">Producers: </span>{ANIMES.anime.moreInfo.producers[0]}</p>
       </div>
       {/* <h1>{animes?.anime?.info?.id}</h1>
       <p>{animes?.anime?.info?.name}</p>
