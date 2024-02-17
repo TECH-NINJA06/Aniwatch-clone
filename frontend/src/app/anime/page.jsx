@@ -7,12 +7,13 @@ import HomeNav from "../Components/HomeNav";
 import { ANIMES } from "../utils/data.example";
 import { BsFillBadgeCcFill } from "react-icons/bs";
 import { CiMicrophoneOn } from "react-icons/ci";
+import { FaPlay } from "react-icons/fa";
+import { FaRegEdit } from "react-icons/fa";
 
 const page = () => {
   const [animes, setAnimes] = useState({});
 
   const searchParams = useSearchParams();
-
   const id = searchParams.get("id");
 
   useEffect(() => {
@@ -35,6 +36,11 @@ const page = () => {
       }
     })();
   }, []);
+
+const handleWatch = () => {
+  console.log(Hello);
+}
+
   return (
     <div className=" h-[100vh] w-[100vw] flex">
       <HomeNav />
@@ -73,8 +79,19 @@ const page = () => {
               <h1 className=" font-bold text-center">{ANIMES.anime.info.stats.episodes.dub}</h1>
             </div>
           </div>
-          <div className="w-full h-20 bg-white mt-14">
-
+          <div className="w-full h-20 bg-white mt-14 gap-3 flex items-center">
+            <div className="h-14 w-52 bg-[#ffdd95] rounded-lg text-black">
+              <button className="h-full w-full flex gap-1 justify-center items-center" onClick={handleWatch}>
+              <FaPlay />
+              <h1 className="font-semibold">Watch now</h1>
+              </button>
+            </div>
+            <div className="h-14 w-52 bg-white rounded-lg text-black">
+              <button className="h-full w-full flex gap-1 justify-center items-center" onClick={handleWatch}>
+              <FaRegEdit />
+              <h1 className="font-semibold">Edit Watch List</h1>
+              </button>
+            </div>
           </div>
         </div>
       </div>
