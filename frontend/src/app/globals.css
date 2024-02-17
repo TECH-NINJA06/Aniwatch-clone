@@ -41,3 +41,7 @@ body {
 .number {
   transform: rotate(-90deg);
 }
+
+.anime {
+  box-shadow: rgba(255, 255, 255, 0.09) 0px 3px 12px;
+}
