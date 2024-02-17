@@ -170,7 +170,7 @@ const HomeNav = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-between float-right bg-slate-50 h-auto w-[7.5rem]">
+        <div className="flex justify-between float-right h-auto w-[7.5rem]">
           <div></div>
           <div className=" bg-[#ffdd95] py-4 my-4 rounded cursor-pointer w-[84.6px] h-[40px] text-center justify-center items-center flex">
             <Link
