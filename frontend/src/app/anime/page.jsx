@@ -10,6 +10,7 @@ import { BsFillBadgeCcFill } from "react-icons/bs";
 import { CiMicrophoneOn } from "react-icons/ci";
 import { FaPlay } from "react-icons/fa";
 import { FaRegEdit } from "react-icons/fa";
+import { IoAddOutline } from "react-icons/io5";
 
 const page = () => {
   const [animes, setAnimes] = useState({});
@@ -215,76 +216,102 @@ const page = () => {
               Recommended for you
             </h1>
           </div>
-              <div className="w-full h-[100vh] bg-white">
-              <div className="h-28 w-full my-1">
-                <div className="h-full w-full p-2 bg-slate-500 flex items-center justify-between">
-                  <div className="h-full w-[5rem] bg-red-50 rounded">
-              <img src={ANIMES.mostPopularAnimes[0].poster} alt="Anime pic" className="h-full w-full object-cover aspect-video" />
-                  </div>
-                  <div className="bg-white h-full w-[92%] flex items-center justify-between">
-                    <div className="bg-blue-400 w-[25%] h-full text-white flex flex-col">
-                      <h2 className=" font-medium text-lg">{ANIMES.mostPopularAnimes[0].name}</h2>
-                      <div className="flex gap-2">
+          <div className="w-full h-[100vh] bg-slate-500 ">
+          <div className="h-28 w-full my-1 border-b-2 border-white border-dashed">
+              <div className="h-full w-full p-2 bg-slate-500 flex items-center justify-between">
+                <div className="h-full w-[5rem] bg-red-50 rounded">
+                  <img
+                    src={ANIMES.mostPopularAnimes[0].poster}
+                    alt="Anime pic"
+                    className="h-full w-full object-cover aspect-video"
+                  />
+                </div>
+                <div className="h-full w-[92%] flex items-center justify-between">
+                  <div className="w-[25%] h-full text-white flex flex-col">
+                    <h2 className=" font-medium text-lg">
+                      {ANIMES.mostPopularAnimes[0].name}
+                    </h2>
+                    <div className="flex gap-2">
                       <div
-                  className="h-7 w-14 flex justify-center items-center
+                        className="h-7 w-14 flex justify-center items-center
              bg-green-400 text-black my-2 rounded gap-1"
-                >
-                  <BsFillBadgeCcFill className="object-contain" />
-                  <h1 className=" font-bold text-center">
-                    {ANIMES.mostPopularAnimes[0].episodes.sub}
-                  </h1>
-                </div>
-                <div
-                  className="h-7 w-14 flex justify-center items-center
-             bg-red-300 text-black my-2 rounded gap-1"
-                >
-                  <CiMicrophoneOn className="object-contain" />
-                  <h1 className=" font-bold text-center">
-                  {ANIMES.mostPopularAnimes[0].episodes.dub}
-                  </h1>
-                </div>
-                <span className="py-2">  {ANIMES.mostPopularAnimes[0].type}</span>
+                      >
+                        <BsFillBadgeCcFill className="object-contain" />
+                        <h1 className=" font-bold text-center">
+                          {ANIMES.mostPopularAnimes[0].episodes.sub}
+                        </h1>
                       </div>
+                      <div
+                        className="h-7 w-14 flex justify-center items-center
+             bg-red-300 text-black my-2 rounded gap-1"
+                      >
+                        <CiMicrophoneOn className="object-contain" />
+                        <h1 className=" font-bold text-center">
+                          {ANIMES.mostPopularAnimes[0].episodes.dub}
+                        </h1>
+                      </div>
+                      <span className="py-2">
+                        {" "}
+                        {ANIMES.mostPopularAnimes[0].type}
+                      </span>
                     </div>
                   </div>
-                </div>
-
-              </div>
-              <div className="h-28 w-full my-1">
-                <div className="h-full w-full p-2 bg-slate-500 flex items-center justify-between">
-                  <div className="h-full w-[5rem] bg-red-50 rounded">
-              <img src={ANIMES.mostPopularAnimes[0].poster} alt="Anime pic" className="h-full w-full object-cover aspect-video" />
+                  <div className="h-full w-10 bg-red-400 flex justify-center items-center text-white">
+                    <button className=" font-bold text-lg">
+                      <IoAddOutline />
+                    </button>
                   </div>
-                  <div className="bg-white h-full w-[92%] flex items-center justify-between">
-                    <div className="bg-blue-400 w-[25%] h-full text-white flex flex-col">
-                      <h2 className=" font-medium text-lg">{ANIMES.mostPopularAnimes[0].name}</h2>
-                      <div className="flex gap-2">
+                </div>
+              </div>
+            </div>
+            <div className="h-28 w-full my-1">
+              <div className="h-full w-full p-2 bg-slate-500 flex items-center justify-between">
+                <div className="h-full w-[5rem] bg-red-50 rounded">
+                  <img
+                    src={ANIMES.mostPopularAnimes[0].poster}
+                    alt="Anime pic"
+                    className="h-full w-full object-cover aspect-video"
+                  />
+                </div>
+                <div className="h-full w-[92%] flex items-center justify-between">
+                  <div className="w-[25%] h-full text-white flex flex-col">
+                    <h2 className=" font-medium text-lg">
+                      {ANIMES.mostPopularAnimes[0].name}
+                    </h2>
+                    <div className="flex gap-2">
                       <div
-                  className="h-7 w-14 flex justify-center items-center
+                        className="h-7 w-14 flex justify-center items-center
              bg-green-400 text-black my-2 rounded gap-1"
-                >
-                  <BsFillBadgeCcFill className="object-contain" />
-                  <h1 className=" font-bold text-center">
-                    {ANIMES.mostPopularAnimes[0].episodes.sub}
-                  </h1>
-                </div>
-                <div
-                  className="h-7 w-14 flex justify-center items-center
-             bg-red-300 text-black my-2 rounded gap-1"
-                >
-                  <CiMicrophoneOn className="object-contain" />
-                  <h1 className=" font-bold text-center">
-                  {ANIMES.mostPopularAnimes[0].episodes.dub}
-                  </h1>
-                </div>
-                <span className="py-2">  {ANIMES.mostPopularAnimes[0].type}</span>
+                      >
+                        <BsFillBadgeCcFill className="object-contain" />
+                        <h1 className=" font-bold text-center">
+                          {ANIMES.mostPopularAnimes[0].episodes.sub}
+                        </h1>
                       </div>
+                      <div
+                        className="h-7 w-14 flex justify-center items-center
+             bg-red-300 text-black my-2 rounded gap-1"
+                      >
+                        <CiMicrophoneOn className="object-contain" />
+                        <h1 className=" font-bold text-center">
+                          {ANIMES.mostPopularAnimes[0].episodes.dub}
+                        </h1>
+                      </div>
+                      <span className="py-2">
+                        {" "}
+                        {ANIMES.mostPopularAnimes[0].type}
+                      </span>
                     </div>
                   </div>
+                  <div className="h-full w-10 bg-red-400 flex justify-center items-center text-white">
+                    <button className=" font-bold text-lg">
+                      <IoAddOutline />
+                    </button>
+                  </div>
                 </div>
-
               </div>
-              </div>
+            </div>
+          </div>
         </div>
       </div>
 
