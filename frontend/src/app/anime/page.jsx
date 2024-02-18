@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import axios from "axios";
 import HomeNav from "../Components/HomeNav";
-import AnimeCard, { AnimeProp } from '../Components/Search/AnimeCard'
+import AnimeCard, { AnimeProp } from "../Components/Search/AnimeCard";
 import { ANIMES } from "../utils/data.example";
 import { BsFillBadgeCcFill } from "react-icons/bs";
 import { CiMicrophoneOn } from "react-icons/ci";
@@ -55,8 +55,8 @@ const page = () => {
         className="bg-no-repeat bg-center bg-cover before:grayscale-[100%]"
         style={{ backgroundImage: `url("${ANIMES.anime.info.poster}")` }}
       > */}
-        <div className=" mx-10 ">
-        <div className=" backdrop-blur">
+      <div className=" px-10 ">
+        <div className="">
           <div className="h-[75vh] w-full mt-28 flex justify-between">
             <div className="h-full w-[29%]">
               <div className=" anime h-[55%] w-[60%] flex justify-between items-cente my-5">
@@ -139,7 +139,7 @@ const page = () => {
             </div>
           </div>
         </div>
-        <div className="backdrop-blur h-[20rem] w-full mt-5 leading-8">
+        <div className="h-[20rem] w-full mt-5 leading-8">
           <p>
             <span className=" text-base font-semibold">Japanese: </span>
             {ANIMES.anime.moreInfo.japanese}
@@ -171,7 +171,10 @@ const page = () => {
           <p>
             <span className=" text-base font-semibold">Genres: </span>
             {ANIMES.anime.moreInfo.genres[0]}, {ANIMES.anime.moreInfo.genres[1]}
-            , {ANIMES.anime.moreInfo.genres[2]}
+            , {ANIMES.anime.moreInfo.genres[2]},{" "}
+            {ANIMES.anime.moreInfo.genres[3]}, {ANIMES.anime.moreInfo.genres[4]}
+            , {ANIMES.anime.moreInfo.genres[5]},{" "}
+            {ANIMES.anime.moreInfo.genres[6]}, {ANIMES.anime.moreInfo.genres[7]}
           </p>
           <p>
             <span className=" text-base font-semibold">Studios: </span>
@@ -182,16 +185,28 @@ const page = () => {
             {ANIMES.anime.moreInfo.producers[0]}
           </p>
         </div>
-        <div className="h-[100vh] w-[100vw] my-10">
+        <div className="h-[100vh] w-[100vw] my-10 pr-10">
           <div className="h-10">
-          <h1 className='text-[#ffdd95] font-semibold text-2xl leading-[1.3]'>
-          Recommended for you  
-          </h1>
+            <h1 className="text-[#ffdd95] font-semibold text-2xl leading-[1.3]">
+              Related Animes
+            </h1>
           </div>
-          <section className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10">
-          {ANIMES.recommendedAnimes.map((item, index) => (
-            <AnimeCard key={item.id} anime={item} index={index} />
-          ))}
+          <section className="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8">
+            {ANIMES.relatedAnimes.map((item, index) => (
+              <AnimeCard key={item.id} anime={item} index={index} />
+            ))}
+          </section>
+        </div>
+        <div className="h-[100vh] w-[100vw] mt-[26rem] pr-10">
+          <div className="h-10">
+            <h1 className="text-[#ffdd95] font-semibold text-2xl leading-[1.3]">
+              Recommended for you
+            </h1>
+          </div>
+          <section className="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 max-w-[100vw]">
+            {ANIMES.recommendedAnimes.map((item, index) => (
+              <AnimeCard key={item.id} anime={item} index={index} />
+            ))}
           </section>
         </div>
       </div>

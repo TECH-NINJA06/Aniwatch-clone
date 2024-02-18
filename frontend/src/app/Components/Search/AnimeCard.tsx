@@ -75,8 +75,8 @@ function AnimeCard({ anime }: Prop) {
   }
 
   return (
-    <div className="max-w-sm rounded relative w-full" onClick={searchClick}>
-      <div className="relative w-full h-[37vh] bg-no-repeat bg-cover" style={{ backgroundImage: `url("${anime.poster}")`}}>
+    <div className="max-w-sm rounded relative w-full my-5" onClick={searchClick}>
+      <div className="relative w-full h-[54vh] bg-no-repeat bg-cover" style={{ backgroundImage: `url("${anime.poster}")`}}>
       {/* <img
       src={`search.animes[${index}].poster`}
       alt={anime.name}
