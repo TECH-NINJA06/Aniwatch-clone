@@ -13,25 +13,25 @@ const HomeNav = () => {
   const [suggestions, setSuggestions] = useState({});
   const [dropdown, setDropdown] = useState(false);
 
-  // useEffect(() => {
-  //   (async () => {
-  //     try {
-  //       // setTimeout(() = > {
-  //       // const response = await axios.get(`https://api-aniwatch.onrender.com/anime/search/suggest?q=${kebabQuery}`);
-  //       // const data = await response.data;
-  //       // setSuggestions(data);
-  //       // console.log(suggestions);})
-  //       const response = await axios.get(
-  //         `https://api-aniwatch.onrender.com/anime/search/suggest?q=${kebabCaseString}&limit=3`
-  //       );
-  //       const data = await response.data;
-  //       setSuggestions(data);
-  //       console.log(suggestions);
-  //     } catch (error) {
-  //       console.log(error);
-  //     }
-  //   })();
-  // }, [query]);
+  useEffect(() => {
+    (async () => {
+      try {
+        // setTimeout(() = > {
+        // const response = await axios.get(`https://api-aniwatch.onrender.com/anime/search/suggest?q=${kebabQuery}`);
+        // const data = await response.data;
+        // setSuggestions(data);
+        // console.log(suggestions);})
+        const response = await axios.get(
+          `https://api-aniwatch.onrender.com/anime/search/suggest?q=${kebabCaseString}&limit=3`
+        );
+        const data = await response.data;
+        setSuggestions(data);
+        console.log(suggestions);
+      } catch (error) {
+        console.log(error);
+      }
+    })();
+  }, [query]);
 
   // useEffect(() => {
   //   setSuggestions(SUGGESTIONS);
