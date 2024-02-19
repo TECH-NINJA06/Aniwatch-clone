@@ -21,7 +21,7 @@ const page = () => {
           );
           const data = await response.data;
           setEpisode(data);
-          console.log(`"watchPage:" ${episode}`);
+          console.log(`"watchPage1:" ${episode}`);
 
         } catch (error) {
           console.log(error);
@@ -36,13 +36,13 @@ const page = () => {
           );
           const data = await response.data;
           setServers(data);
-          console.log(`"watchPage:" ${servers}`);
+          console.log(`"watchPage2:" ${servers}`);
 
         } catch (error) {
           console.log(error);
         }
       })();
-    }, []);
+    }, [currentEpi]);
 
     const handleClick = () => {
       setCurrentEpi(currentEpi++);

@@ -46,7 +46,7 @@ const page = () => {
   }, []);
 
   const handleWatch = () => {
-    router.push(`/anime/watch/id=${animes?.anime?.info.id}?ep=1`);
+    router.push(`/anime/watch?id=${animes?.anime?.info.id}?ep=1`);
   };
 
   // const demoDescription = `${ANIMES.anime.info.description}`;
