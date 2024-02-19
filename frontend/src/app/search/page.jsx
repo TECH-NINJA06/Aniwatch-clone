@@ -38,7 +38,7 @@ const page = () => {
       const response = await axios.get(`https://api-aniwatch.onrender.com/anime/search?q=${keyword}`);
       const data = await response.data;
       setSearch(data)
-      console.log(data)
+      console.log(`"searchPage": ${search}`)
 
      })()
 

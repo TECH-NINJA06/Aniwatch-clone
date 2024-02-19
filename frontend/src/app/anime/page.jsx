@@ -36,7 +36,7 @@ const page = () => {
         // await setSpotlight1(spotlight[0])
         // setPosterUrl1(spotlight1.poster)
         //  console.log(home.spotlightAnimes[0].poster)
-        console.log(animes);
+        console.log(`"animePage:" ${animes}`);
         // console.log(spotlight1)
         // console.log(posterUrl1)
       } catch (error) {
@@ -46,10 +46,10 @@ const page = () => {
   }, []);
 
   const handleWatch = () => {
-    router.push(`/anime/watch/id=${animes?.anime?.info.id}`);
+    router.push(`/anime/watch/id=${animes?.anime?.info.id}?ep=1`);
   };
 
-  const demoDescription = `${ANIMES.anime.info.description}`;
+  // const demoDescription = `${ANIMES.anime.info.description}`;
   const description = `${animes?.anime?.info?.description}`;
 
   return (
