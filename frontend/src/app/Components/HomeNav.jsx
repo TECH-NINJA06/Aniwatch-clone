@@ -59,10 +59,10 @@ const HomeNav = () => {
   return (
     <div className="h-[70px] w-[100vw] bg-[#242428] px-3 z-50 fixed homenav">
       <div className="flex h-full w-full justify-between">
-        <div className="float-left w-[36%] flex justify-between">
-          <div className="w-[31%] h-full flex justify-center items-center">
+        <div className="float-left w-[50%] flex justify-between">
+          <div className="w-[31%] h-[80%] flex justify-center items-center float-left mr-5">
             <Link href="/home">
-              <img src=".././HomeLogo.png" alt="Aniwatch" className="py-3" />
+              <img src=".././HomeLogo.png" alt="Aniwatch" className="pb-3 pt-4 h-[5rem] w-full" />
             </Link>
           </div>
           <div className="bg-[#242428] w-[65%] h-full py-4 rounded-b-md">
@@ -92,7 +92,7 @@ const HomeNav = () => {
                 return (
                 <div className="" key={index} onClick={handleSearch}>
                   <div className="h-[70px] w-full bg-[#242428] border-slate-700 border-dashed border-2 flex justify-between items-center">
-                    <div className="justify-center items-center flex px-2">
+                    <div className="justify-center items-center flex px-2 h-full w-16">
                       <img
                         src={suggestion?.poster}
                         alt="anime img"
@@ -101,18 +101,18 @@ const HomeNav = () => {
                     </div>
                     <div className=" min-w-[80%] h-full p-1">
                       <div className="h-4">
-                        <h1 className="text-white font-medium text-base">
+                        <h1 className="text-white font-medium text-sm">
                           {suggestion?.name}
                         </h1>
                       </div>
                       <div>
-                        <p>{suggestion?.jname}</p>
+                        <p className=" text-xs">{suggestion?.jname}</p>
                       </div>
 
                       <div className="flex gap-2">
-                        <p>{suggestion?.moreInfo[0]}</p>
-                        <p>{suggestion?.moreInfo[1]}</p>
-                        <p>{suggestion?.moreInfo[2]}</p>
+                        <p className=" text-xs">{suggestion?.moreInfo[0]}</p>
+                        <p className=" text-xs">{suggestion?.moreInfo[1]}</p>
+                        <p className=" text-xs">{suggestion?.moreInfo[2]}</p>
                       </div>
                     </div>
                   </div>
