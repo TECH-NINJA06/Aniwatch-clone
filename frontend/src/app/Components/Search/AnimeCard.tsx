@@ -81,7 +81,7 @@ function AnimeCard({ anime }: Prop) {
       src={`search.animes[${index}].poster`}
       alt={anime.name}
       className="rounded-xl"
-    /> */}
+     /> */}
       </div>
       <div className="py-4 flex flex-col gap-3">
         <div className="flex justify-between items-center gap-1">
