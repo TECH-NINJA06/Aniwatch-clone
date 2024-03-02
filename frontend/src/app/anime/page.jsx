@@ -46,7 +46,7 @@ const page = () => {
   }, []);
 
   const handleWatch = () => {
-    router.push(`/anime/watch?id=${animes?.anime?.info.id}?ep=1`);
+    router.push(`/watch?id=${animes?.anime?.info.id}?ep=1`);
   };
 
   // const demoDescription = `${ANIMES.anime.info.description}`;
@@ -211,7 +211,7 @@ const page = () => {
           </p>
           <p>
             <span className=" text-base font-semibold">Producers: </span>
-            {animes?.anime?.moreInfo?.producers[0]}
+            {animes?.anime?.moreInfo.producers ? animes?.anime?.moreInfo.producers[0] : "null" }
           </p>
         </div>
         <div className="h-[100vh] w-[100vw] my-10 pr-10">

@@ -124,10 +124,10 @@ const HomeCarousal = () => {
         </div>
         <div className='h-full w-full bg-cover' style={{ backgroundImage: `url("${home?.spotlightAnimes ? home.spotlightAnimes[9].poster : "https://cdn.dribbble.com/users/172906/screenshots/1183163/2013-08-04_21_12_53.gif"}")`}}>
         </div>
-        <div className='h-full w-full bg-cover' style={{ backgroundImage: `url("${home?.spotlightAnimes ? home.spotlightAnimes[10].poster : "https://cdn.dribbble.com/users/1053052/screenshots/3600670/_____.gif"}")`}}>
+        {/* <div className='h-full w-full bg-cover' style={{ backgroundImage: `url("${home?.spotlightAnimes ? home.spotlightAnimes[0].poster : "https://cdn.dribbble.com/users/1053052/screenshots/3600670/_____.gif"}")`}}>
         </div>
-        <div className='h-full w-full bg-cover' style={{ backgroundImage: `url("${home?.spotlightAnimes ? home.spotlightAnimes[11].poster : "https://cdn.dribbble.com/users/172906/screenshots/1183163/2013-08-04_21_12_53.gif"}")`}}>
-        </div>
+        <div className='h-full w-full bg-cover' style={{ backgroundImage: `url("${home?.spotlightAnimes ? home.spotlightAnimes[1].poster : "https://cdn.dribbble.com/users/172906/screenshots/1183163/2013-08-04_21_12_53.gif"}")`}}>
+        </div> */}
       </Carousel>
     </div>
   )
