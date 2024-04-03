@@ -76,12 +76,12 @@ function AnimeCard({ anime }: Prop) {
 
   return (
     <div className="max-w-sm rounded relative w-full my-5" onClick={searchClick}>
-      <div className="relative w-full h-[54vh] bg-no-repeat bg-cover" style={{ backgroundImage: `url("${anime.poster}")`}}>
-      {/* <img
-      src={`search.animes[${index}].poster`}
+      <div className="relative w-full h-[54vh]">
+      <img
+      src={anime.poster}
       alt={anime.name}
-      className="rounded-xl"
-     /> */}
+      className="size-auto max-h-full max-w-full"
+     />
       </div>
       <div className="py-4 flex flex-col gap-3">
         <div className="flex justify-between items-center gap-1">

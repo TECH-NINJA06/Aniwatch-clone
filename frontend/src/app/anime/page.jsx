@@ -46,7 +46,7 @@ const page = () => {
   }, []);
 
   const handleWatch = () => {
-    router.push(`/watch?id=${animes?.anime?.info.id}?ep=1`);
+    router.push(`/watch?id=${id}?ep=1`);
   };
 
   // const demoDescription = `${ANIMES.anime.info.description}`;
@@ -211,7 +211,9 @@ const page = () => {
           </p>
           <p>
             <span className=" text-base font-semibold">Producers: </span>
-            {animes?.anime?.moreInfo.producers ? animes?.anime?.moreInfo.producers[0] : "null" }
+            {animes?.anime?.moreInfo.producers
+              ? animes?.anime?.moreInfo.producers[0]
+              : "null"}
           </p>
         </div>
         <div className="h-[100vh] w-[100vw] my-10 pr-10">
@@ -235,11 +237,8 @@ const page = () => {
               Recommended for you
             </h1>
           </div>
-          <section className="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 max-w-[100vw]">
-            {/* {ANIMES.recommendedAnimes.map((item, index) => (
-              <AnimeCard key={item.id} anime={item} index={index} />
-            ))} */}
-            {animes?.recommendedAnimes?.map((item, index) => (
+          <section className="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 max-w-[100vw] overflow-x-hidden h-auto min-h-screen">
+            {animes?.recommendedAnimes?.slice(0, 15).map((item, index) => (
               <AnimeCard key={item.id} anime={item} index={index} />
             ))}
           </section>
