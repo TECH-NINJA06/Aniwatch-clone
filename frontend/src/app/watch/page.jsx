@@ -79,11 +79,11 @@ const page = () => {
     const description = `${animeData?.anime?.info?.description}`;
 
   return (
-    <div>
+    <div className="h-auto w-screen">
       <HomeNav />
-      <div className="pt-28 min-h-screen h-auto w-screen flex justify-between items-center px-5">
-        <div className="h-full w-[75%] bg-white px-5">
-          <h1>{normalname}</h1>
+      <div className="pt-28 h-screen w-screen flex justify-between items-center px-5">
+        <div className="h-full w-[75%] px-5 overflow-x-hidden">
+          <video src="https://s.megastatics.com/subtitle/9c302488d79166d2424829a76dac57ae/eng-4.vtt" className="h-full w-[90%]"></video>
         </div>
         <div className="min-h-full h-auto w-[20%] flex flex-col gap-5">
           <img src={animeData?.anime?.info?.poster} alt="" className="h-40 w-28"/>
@@ -137,6 +137,10 @@ const page = () => {
             </p>
           </div>
         </div>
+      </div>
+      <div className="h-screen w-screen flex flex-col justify-between items-center mt-28">
+        <div className="h-[35%] w-screen bg-white"></div>
+        <div className="h-[55%] w-screen bg-white"></div>
       </div>
   </div>
   )
